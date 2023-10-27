@@ -248,6 +248,19 @@ button {
   color: var(--link-hover);
 }
 
+.menu-humburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: #fff;
+}
+
+.menu-humburger-icon {
+  stroke: var(--title-color);
+}
+
 /* ========== /HEADER ========== */
 /* ========== HERO ========== */
 
@@ -257,7 +270,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero/bg.jpg);
+    url(../images/hero/bg_mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -266,16 +279,78 @@ button {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+  (max-width: 767px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/bg_mob@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/bg_tab@1x.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/bg_tab@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 1168px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/bg_desk@1x.jpg);
+  }
+}
+
+@media only screen and (min-width: 1168px) and (min-device-pixel-ratio: 2),
+  (min-width: 1168px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/bg_desk@2x.jpg);
+  }
+}
+
 .hero-title {
   color: #fff;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 1.12px;
+  line-height: 1.1;
+  letter-spacing: 0.72px;
   text-align: center;
   padding-bottom: 48px;
-  max-width: 496px;
+  max-width: 320px;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 767.98px) {
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    max-width: 496px;
+  }
 }
 
 /* ========== /HERO ========== */
@@ -1122,3 +1197,13 @@ button {
 }
 
 /* ========== /MODAL WINDOW ========== */
+
+/* ========== MOBILE MENU ========== */
+
+.menu-humburger-close {
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid #e7e9fc;
+}
+
+/* ========== /MOBILE MENU ========== */

@@ -38,7 +38,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header id="header" class="header hide">
+    <header id="header" class="header">
       <div class="container flex-content">
         <nav class="main-nav">
           <a href="./index.html" class="logo link"
@@ -74,6 +74,16 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-humburger js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-humburger-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- /HEADER -->
@@ -448,7 +458,7 @@
           >
           <p class="footer-text text">
             Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
+            digital marketing &amp growth solutions.
           </p>
         </div>
         <div class="footer-social">
@@ -506,7 +516,7 @@
       </div>
     </footer>
     <!-- MODAL WINDOW -->
-    <div class="backdrop is-hidden hide" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-btn-icon" width="8" height="8">
@@ -589,6 +599,24 @@
       </div>
     </div>
     <!-- /MODAL WINDOW -->
+    <!-- MOBILE MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button
+        class="menu-humburger menu-humburger-close js-close-menu"
+        type="button"
+      >
+        <svg class="menu-toggle-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-item">
+        <li><a href="" class="mobile-menu-link link">About</a></li>
+        <li><a href="" class="mobile-menu-link link">Products</a></li>
+        <li><a href="" class="mobile-menu-link link">Contacts</a></li>
+      </ul>
+    </div>
+    <!-- /MOBILE MENU -->
     <!-- /FOOTER -->
     <script src="./js/modal.js"></script>
   </body>
