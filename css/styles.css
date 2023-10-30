@@ -181,6 +181,7 @@ button {
 
 .flex-content {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -200,6 +201,7 @@ button {
 }
 
 .menu-link-det {
+  display: block;
   position: relative;
   color: var(--title-color);
   font-weight: 500;
@@ -207,7 +209,6 @@ button {
 }
 
 .menu-link {
-  padding: 24px 0;
   position: relative;
 }
 
@@ -240,7 +241,7 @@ button {
   .adress-list {
     display: flex;
     flex-direction: column;
-    padding: 11px 0;
+    gap: 12px;
   }
 }
 
@@ -260,6 +261,7 @@ button {
 @media only screen and (min-width: 768px) {
   .adress-link {
     padding: 0;
+    font-size: 12px;
   }
 }
 
@@ -395,9 +397,10 @@ button {
   line-height: 1.1;
   letter-spacing: 0.72px;
   text-align: center;
-  padding-bottom: 48px;
+
   max-width: 320px;
   margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -406,6 +409,7 @@ button {
     line-height: 1.07;
     letter-spacing: 1.12px;
     max-width: 496px;
+    margin-bottom: 48px;
   }
 }
 
@@ -425,6 +429,7 @@ button {
 
 .about-main-list {
   display: flex;
+  gap: 72px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -458,7 +463,6 @@ button {
   }
   .about-text {
     font-weight: 500;
-    margin-bottom: 72px;
   }
 }
 
@@ -477,11 +481,25 @@ button {
 
 .about-title {
   margin-bottom: 8px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.72px;
+  text-align: center;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) {
   .about-title {
-    text-align: center;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .about-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
   }
 }
 
@@ -1336,6 +1354,7 @@ button {
   line-height: 1.11;
   letter-spacing: 0.72px;
   margin-bottom: 40px;
+  color: var(--main-background-color);
 }
 
 @media only screen and (min-width: 428px) {
@@ -1350,17 +1369,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.4px;
   margin-bottom: 48px;
-}
-
-.mobile-contacts-color {
-  color: #434445;
-
-  transition: color var(--transition);
-}
-
-.mobile-contacts-color:focus {
-  color: var(--link-hover);
-  outline: none;
+  color: #434455;
 }
 
 .mobile-social-list {
