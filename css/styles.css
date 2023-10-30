@@ -239,7 +239,8 @@ button {
 @media only screen and (min-width: 768px) {
   .adress-list {
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    padding: 11px 0;
   }
 }
 
@@ -247,8 +248,22 @@ button {
   padding: 24px 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .adress-link {
+    padding: 0;
+  }
+}
+
 .adress-hover {
   color: var(--text-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .adress-hover {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+  }
 }
 
 .adress-hover {
@@ -267,6 +282,12 @@ button {
   padding: 24px 0;
   border: none;
   background-color: #fff;
+}
+
+@media only screen and (min-width: 767.98px) {
+  .menu-humburger {
+    display: none;
+  }
 }
 
 .menu-humburger-icon {
@@ -1289,18 +1310,18 @@ button {
 }
 
 .mobile-contacts-phone {
-  font-size: 36px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.72px;
   margin-bottom: 40px;
 }
-/* 
-@media only screen and (min-width: 430px) {
-  .mobile-contacts-phone {
+
+@media only screen and (min-width: 428px) {
+  .mobile-contacts-phone.active {
     font-size: 36px;
   }
-} */
+}
 
 .mobile-contacts-email {
   font-size: 20px;
